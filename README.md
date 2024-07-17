@@ -2,10 +2,13 @@ This repo deploy a Wordpress stack along with a Proxy sever in a Kubernetes clus
 Steps for working this application in your Kubernetes Cluster:
 
 # STEP1 
-Clone the repo in your local kubernetes cluster or GKE # git clone <repo link>
+Clone the repo in your local kubernetes cluster or GKE 
+
+**git clone https://github.com/PiyushTyagi-Tech/containerisation-ica2.git**
 
 # STEP2
 Creating the required namespaces:
+
 **kubectl create namespace wp-app**
 
 **kubectl create namespace mariadb**
