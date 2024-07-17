@@ -22,7 +22,7 @@ Applying the changes to all the services and Deployment in the cluster
 
 **_eg mariadb deployment and services files in directory mariadb: kubectl apply -f deployment.yaml_**
 
-STEP4
+# STEP4
 Accessing the application from loadbalancer service in nginx-Service EXTERNAL IP.
 
 # _OPTIONAL_STEP5 
