@@ -3,25 +3,29 @@ Steps for working this application in your Kubernetes Cluster:
 
 # STEP1 
 Clone the repo in your local kubernetes cluster or GKE 
-
+```sh
 **git clone https://github.com/PiyushTyagi-Tech/containerisation-ica2.git**
-
+```
 # STEP2
 Creating the required namespaces:
-
-**kubectl create namespace wp-app**
-
-**kubectl create namespace mariadb**
-
-**kubectl create namespace nginx-proxy** 
-
+```sh
+kubectl create namespace wp-app
+```
+```sh
+kubectl create namespace mariadb
+```
+```sh
+kubectl create namespace nginx-proxy 
+```
 # STEP3
 Applying the changes to all the services and Deployment in the cluster
-
-**kubectl apply -f <.yaml - files >**
-
-**_eg mariadb deployment and services files in directory mariadb: kubectl apply -f deployment.yaml_**
-
+```sh
+kubectl apply -f <.yaml - files >
+```
+**_eg mariadb deployment and services files in directory mariadb:
+```sh
+kubectl apply -f deployment.yaml_**
+```
 # STEP4
 Accessing the application from loadbalancer service in nginx-Service EXTERNAL IP.
 
