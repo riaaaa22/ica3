@@ -6,10 +6,9 @@ Clone the repo in your local kubernetes cluster or GKE # git clone <repo link>
 
 # STEP2
 Creating the required namespaces:
-**kubectl create namespace wp-app
-kubectl create namespace mariadb
-kubectl create namespace nginx-proxy
-** 
+**kubectl create namespace wp-app**
+**kubectl create namespace mariadb**
+**kubectl create namespace nginx-proxy** 
 
 # STEP3
 Applying the changes to all the services and Deployment in the cluster
