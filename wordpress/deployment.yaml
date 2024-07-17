@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wp-app
+  namespace: wp-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wp-app
+  template:
+    metadata:
+      labels:
+        app: wp-app
+    spec:
+      containers:
+      - name: wp
+        image: piyush8085/wp-2:ica
+        env:
+        - name: WORDPRESS_DB_HOST
+          value: db-service.mariadb.svc.cluster.local
+        - name: WORDPRESS_DB_USER
+          value: wordpress
+        - name: WORDPRESS_DB_PASSWORD
+          value: wordpress
+        - name: WORDPRESS_DB_NAME
+          value: wordpress
+        ports:
+        - containerPort: 80
