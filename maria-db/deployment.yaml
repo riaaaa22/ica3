@@ -27,3 +27,5 @@ spec:
           value: wordpress
         ports:
         - containerPort: 3306
+
+    ##Adding the Application Code
