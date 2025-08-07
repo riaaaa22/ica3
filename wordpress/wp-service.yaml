@@ -4,8 +4,10 @@ metadata:
   name: wp-service
   namespace: wp-app
 spec:
+  type: NodePort               # Add this line
   ports:
-  - port: 80
-    targetPort: 80
+    - port: 80
+      targetPort: 80
+      nodePort: 30082         # Choose a port between 30000-32767
   selector:
     app: wp-app
