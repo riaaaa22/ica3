@@ -8,6 +8,6 @@ spec:
   ports:
   - port: 80
     targetPort: 80
-    nodePort: 30091  # Choose a port in the range 30000-32767
+    nodePort: 30092  # Choose a port in the range 30000-32767
   selector:
     app: nginx-proxy
