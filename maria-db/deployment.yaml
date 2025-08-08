@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: db
-        image: riya/db:ica
+        image: piyush8085/db:ica
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: somewordpress
