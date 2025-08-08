@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: wp
-        image: riya/wp-2:ica
+        image: piyush/wp-2:ica
         env:
         - name: WORDPRESS_DB_HOST
           valueFrom:
