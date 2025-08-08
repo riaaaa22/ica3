@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: piyush/nginx-proxy-9:ica
+        image: piyush8085/nginx-proxy-9:ica
         ports:
         - containerPort: 80
